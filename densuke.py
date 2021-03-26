@@ -15,8 +15,8 @@ if __name__ == "__main__":
     year=sys.argv[1]
     month=sys.argv[2]
     cal_thismonth=cal.itermonthdays2(int(year),int(month))
-    print("イベント名: 研究室に行く予定("+year+"年"+month+"月)\n")
-    print("イベント説明文: 行く気満々の場合には'○'を、もしかしたら行くかも〜という場合には'△'をつけてください\n")
+    print("イベント名: 研究室在室状況報告("+year+"年"+month+"月)\n")
+    print("イベント説明文: 行く場合は○をつけてください．\n")
     for day in cal_thismonth:
         if(day[0]>0): # 前月分は無視する
             print(month+'月'+str(day[0])+'日'+youbi[day[1]]+'    -12時')
