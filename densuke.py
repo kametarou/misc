@@ -19,6 +19,6 @@ if __name__ == "__main__":
     print("イベント説明文: 行く気満々の場合には'○'を、もしかしたら行くかも〜という場合には'△'をつけてください\n")
     for day in cal_thismonth:
         if(day[0]>0): # 前月分は無視する
-            print(month+'月'+str(day[0])+'日'+youbi[day[1]]+'-12時')
+            print(month+'月'+str(day[0])+'日'+youbi[day[1]]+'    -12時')
             print(month+'月'+str(day[0])+'日'+youbi[day[1]]+'12時-17時')
-            print(month+'月'+str(day[0])+'日'+youbi[day[1]]+'17時-')
+            print(month+'月'+str(day[0])+'日'+youbi[day[1]]+'17時-    ')
